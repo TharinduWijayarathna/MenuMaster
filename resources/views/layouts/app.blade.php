@@ -27,6 +27,7 @@
             @include('components.footer')
         </div>
     </div>
+    @include('sweetalert::alert')
     @include('libraries.scripts')
 </body>
 

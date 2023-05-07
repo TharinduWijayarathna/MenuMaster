@@ -21,4 +21,20 @@
     <x-slot name="content">
         <livewire:admin.user-management.tables.all />
     </x-slot>
+    @push('modals')
+        <div class="modal fade" id="userEditModal" tabindex="-1" aria-labelledby="userEditModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="userEditModalLabel">Edit User</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <livewire:admin.user-management.basic.edit />
+                </div>
+            </div>
+        </div>
+    @endpush
+
+    @push('scripts')
+    @endpush
 </x-app-layout>

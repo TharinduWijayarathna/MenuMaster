@@ -1,5 +1,6 @@
 @livewireScripts
 <script src="{{ asset('assets/libs/jquery/dist/jquery.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 <!-- Bootstrap tether Core JavaScript -->
 <script src="{{ asset('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js') }}"></script>
@@ -21,3 +22,6 @@
 <script src="{{ asset('assets/libs/flot/jquery.flot.crosshair.js') }}"></script>
 <script src="{{ asset('assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js') }}"></script>
 <script src="{{ asset('dist/js/pages/chart/chart-page-init.js') }}"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+@stack('scripts')
