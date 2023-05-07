@@ -3,13 +3,13 @@
         <div class="page-breadcrumb">
             <div class="row">
                 <div class="col-12 d-flex no-block align-items-center">
-                    <h4 class="page-title">Dashboard</h4>
+                    <h4 class="page-title">User Management</h4>
                     <div class="ms-auto text-end">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">
-                                    Library
+                                    User Management
                                 </li>
                             </ol>
                         </nav>
@@ -19,6 +19,6 @@
         </div>
     </x-slot>
     <x-slot name="content">
-
+        <livewire:admin.user-management.tables.all />
     </x-slot>
 </x-app-layout>
