@@ -26,6 +26,11 @@
                             href="{{ route('admin.test.product') }}" aria-expanded="false"><i
                                 class="mdi mdi-pi-box"></i><span class="hide-menu">Product Management</span></a>
                     </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            href="{{ route('admin.test.table') }}" aria-expanded="false"><i
+                                class="mdi mdi-table"></i><span class="hide-menu">Table Management</span></a>
+                    </li>
                 @endif
                 {{-- Customer Controls --}}
                 @if (Auth::user()->user_type == 2)

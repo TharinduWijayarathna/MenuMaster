@@ -19,6 +19,15 @@
         </div>
     </x-slot>
     <x-slot name="content">
+        <div class="row text-end">
+            <div class="col-10"></div>
+            <div class="col-2">
+                <button type="button" class="btn btn-success margin-5 text-white mb-3" data-toggle="modal"
+                    data-target="#Modal1">
+                    Add User
+                </button>
+            </div>
+        </div>
         <livewire:admin.user-management.tables.all />
     </x-slot>
     @push('modals')

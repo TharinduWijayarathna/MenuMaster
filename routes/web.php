@@ -31,5 +31,9 @@ Route::prefix('admin')->group(function () {
         Route::get('/product', function () {
             return view('pages.admin.test.product');
         })->name('admin.test.product');
+
+        Route::get('/table', function () {
+            return view('pages.admin.test.table');
+        })->name('admin.test.table');
     });
 });
