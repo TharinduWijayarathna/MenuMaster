@@ -26,4 +26,10 @@ Route::prefix('admin')->group(function () {
         Route::post('/update/{id}', [UserController::class, 'update'])->name('admin.user.update');
         Route::get('/delete/{id}', [UserController::class, 'delete'])->name('admin.user.delete');
     });
+
+    Route::prefix('test')->group(function () {
+        Route::get('/product', function () {
+            return view('pages.admin.test.product');
+        })->name('admin.test.product');
+    });
 });

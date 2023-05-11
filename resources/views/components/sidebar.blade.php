@@ -16,9 +16,15 @@
                                 class="hide-menu">Dashboard</span></a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('admin.user.index')}}"
-                            aria-expanded="false"><i class="mdi mdi-account-plus"></i><span class="hide-menu">User
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            href="{{ route('admin.user.index') }}" aria-expanded="false"><i
+                                class="mdi mdi-account-plus"></i><span class="hide-menu">User
                                 Management</span></a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            href="{{ route('admin.test.product') }}" aria-expanded="false"><i
+                                class="mdi mdi-pi-box"></i><span class="hide-menu">Product Management</span></a>
                     </li>
                 @endif
                 {{-- Customer Controls --}}
