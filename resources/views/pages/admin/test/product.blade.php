@@ -38,7 +38,7 @@
                     <table class="table">
                         <thead class="thead-light">
                             <tr>
-                                <th scope="col">Product Image</th>
+                                <th scope="col" class="text-center">Product Image</th>
                                 <th scope="col">Product Name</th>
                                 <th scope="col">Dish Type</th>
                                 <th scope="col">Category</th>
